@@ -1,0 +1,105 @@
+.cards {
+    background-color: lightgrey;
+    height: 90vh;
+    margin: 0px;
+}
+
+.cards__cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.cards__individualCards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 0.25vw;
+    width: 24.5vw;
+    padding: 0px;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+
+    .upperSection {
+        background-color: rgb(54, 54, 54);
+        width: 24.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 28vh;
+        border-bottom-left-radius: 50% 10%;
+        border-bottom-right-radius: 50% 10%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        img {
+            margin-top: 15px;
+            height: 18vh;
+            width: auto;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        h3 {
+            color: white;
+            margin: 10px;
+        }
+    }
+
+    .lowerSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: rgb(54, 54, 54);
+            padding: 0.6rem;
+            border: solid gray 2px;
+            border-radius: 10px;
+            margin: 0.8rem;
+            margin-bottom: 1.5rem;
+            width: 14rem;
+            height: fit-content;
+        }
+
+        a {
+            color: orangered;
+        }
+    }
+
+    .popUp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0;
+        width: 23vw;
+        opacity: 0;
+        background-color: lightgray;
+        position: absolute;
+        bottom: 0px;
+        border-radius: 300px 300px 0px 0px;
+
+        .addButton {
+            color: orangered;
+            font-size: 35px;
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+
+        & > .popUp {
+            opacity: 1;
+            height: 10vh;
+            transition: all 0.2s ease;
+        }
+    }
+}

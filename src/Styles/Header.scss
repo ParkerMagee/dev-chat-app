@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem 6rem;
+    align-items: center;
+    border-bottom: 2px solid #3d3d3d;
+    border-radius: 3px;
+}
+
+.header__logo {
+    margin: topx;
+    color: #f93a13;
+}
+
+.header__icon {
+    margin: 10px;
+    color: #f93a13;
+}
